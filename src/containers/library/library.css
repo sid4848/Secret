@@ -1,0 +1,49 @@
+.sec__library {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 4rem;
+    padding-bottom: 0;
+}
+
+.sec__library h1 {
+    font-family: var(--font-family);
+    margin: 1.5rem 0 ;
+}
+
+.sec__library p {
+    color: var(--color-text);
+    font-family: var(--font-family);
+    font-size: 1rem;
+}
+
+.sec__lib-button {
+    margin-left: 2rem;
+    left:43%
+}
+
+@media screen and (max-width:1050px) {
+    .sec__lib-button {
+        left: 40%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .sec__lib-button {
+        left:35%
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    .sec__lib-button {
+        left: 23%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .sec__lib-button {
+        left: 20%;
+    }
+}

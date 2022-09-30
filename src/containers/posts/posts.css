@@ -1,0 +1,33 @@
+.sec__posts-heading {
+    margin: 4rem 2rem ;
+}
+
+.sec__posts-heading h1 {
+    text-align: center;
+    margin: 1rem;
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.sec__posts-heading p {
+    text-align: center;
+    color: var(--color-text);
+    font-size: 1rem;
+    font-family: var(--font-family);
+}
+
+.sec__posts-slider {
+    display: flex;
+    justify-content: center;
+}
+
+.sec__posts-arrows {
+    color: skyblue;
+    cursor: pointer;
+    transition: scale 0.2s;
+}
+
+.sec__posts-arrows:hover {
+    scale: 1.1;
+}

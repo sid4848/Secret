@@ -1,0 +1,90 @@
+.sec__que {
+    margin: 4rem;
+    font-family: var(--font-family);
+}
+
+.sec__que h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    margin-left: 0;
+    white-space: wrap;
+}
+
+.sec__que-container {
+    border-bottom: 0.5px solid skyblue;
+}
+
+.sec__que-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 2rem 0 ;
+    color: #fff;
+
+}
+
+.sec__que-content h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    /* margin-bottom: 1rem; */
+}
+
+.sec__que-content img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.sec__que-ans {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+
+
+.sec__que button {
+    justify-content: center;
+    margin: 2rem;
+    left: 43%;
+}
+
+@media screen and (max-width:1050px) {
+    .sec__que button {
+        left: 38%;
+    }
+}
+@media screen and (max-width:800px) {
+    .sec__que button {
+        left: 34%;
+    }
+}
+@media screen and (max-width:500px) {
+    .sec__que button {
+        left: 6%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .sec__que h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .sec__que h1 {
+        font-size: 1.6rem;
+    }
+
+    .sec__que-ans {
+        font-size: 1rem;
+    }
+
+    .sec__que-content h2 {
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+}

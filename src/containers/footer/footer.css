@@ -1,0 +1,259 @@
+.sec__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background: var(--color-footer);
+    font-family: var(--font-family);
+    color: #fff;
+    padding: 4rem 3rem;
+}
+
+
+.sec__footer-rating {
+    display: flex;
+    flex-direction: column;
+}
+
+.sec__footer-secret img,
+.sec__footer-star img {
+    width: 200px;
+    margin-bottom: 0.5rem;
+}
+
+.sec__footer-secret p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.sec__footer-language-english,
+.sec__footer-language-french {
+    padding: 0.1rem;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sec__footer-language-english {
+    background: #fff;
+    color: #000;
+}
+
+.sec__footer-language-french {
+    background: var(--color-blog);
+    color: #fff;
+}
+
+
+.sec__footer-language-english img,
+.sec__footer-language-french img {
+    width: 10px;
+    margin: 0.5rem;
+}
+
+.sec__footer-star {
+    margin-top: 2rem;
+}
+
+.sec__footer-star,
+.sec__footer-secret {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sec__footer-star img {
+    margin: 0.5rem;
+}
+
+.sec__footer-links_container li {
+    margin-bottom: 0.5rem;
+    color: #ccc;
+    font-size: 1rem;
+    list-style: none;
+}
+
+.sec__footer-links_container li:hover {
+    color: #fff;
+}
+
+.sec__footer-links_container h4 {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+
+.sec__footer-links_container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) ;
+    gap: 4rem;
+    grid-column-end: auto;
+}
+
+.sec__footer-links_container1 {
+    display: grid;
+    grid-template-rows: repeat(2, minmax(0,1fr));
+    gap: 1rem;
+}
+
+.sec__footer-search {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+.sec__footer-search h4 {
+    margin-bottom: 1rem;
+}
+
+.sec__footer-search p {
+    margin-bottom: 1rem;
+}
+
+.sec__footer-search input {
+    padding: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    outline: none;
+    background: var(--color-blog);
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.sec__footer-search h4 {
+    font-size: 1.2rem;
+}
+
+.sec__footer-search p {
+    color: #fff;
+    font-size: 1rem;
+}
+.sec__footer-search_btn {
+    background: red;
+    color: #fff;
+}
+
+.sec__footer-search_btn:hover {
+    scale: 1;
+    background: rgb(175, 5, 5);
+}
+
+.sec__footer-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    font-family: var(--font-family);
+    flex-wrap: wrap;
+    background: #000;
+}
+
+.sec__footer-media p {
+    margin-bottom: 1rem;
+}
+
+.sec__footer-media a{
+    color: #ccc;
+    font-size: 0.8rem;
+    font-weight: 400;
+    /* margin-bottom: 1rem; */
+}
+
+.sec__footer-media  a:hover {
+    color: #fff;
+}
+
+.sec__footer-media a {
+    margin-right: 0.4rem ;
+}
+
+.sec__footer-socialmedia {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: 1rem;
+}
+
+.sec__footer-socialmedia img {
+    width:20px;
+    height: 20px;
+    margin-right: 70px;
+}
+
+
+
+@media screen and (max-width:1050px) {
+    .sec__footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sec__footer-rating,
+    .sec__footer-links_container {
+        margin-bottom: 3rem;
+    }
+
+    .sec__footer-search {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:800px)  {
+
+    .sec__footer-links_container {
+        grid-template-columns: repeat(2, minmax(0,1fr));
+    }
+
+    .sec__footer-links_container1 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: none;
+        grid-column-start: span 2;
+    }
+        
+}
+
+
+@media screen and (max-width:650px) {
+    .sec__footer-search {
+        width: 300px;
+    }
+
+    .sec__footer-media p {
+        margin-left: 0;
+    }
+
+    .sec__footer-media p:nth-child(2) {
+        margin-left: 2rem;
+    }
+
+    .sec__footer-socialmedia {
+        justify-content: center;
+        margin-left: 4rem;
+    }
+
+    .sec__footer-media {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .sec__footer-search {
+        width: 250px;
+    }
+
+    .sec__footer-socialmedia img {
+        margin-right: 30px;
+    }
+
+}

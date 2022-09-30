@@ -1,0 +1,211 @@
+.sec__lib-article_container,
+.sec__deal-article_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    padding: 2rem 3rem;
+}
+
+.sec__lib-article,
+.sec__deal-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1.5rem;
+    background: var(--color-blog);
+    border-radius: 15px;
+}
+
+.sec__deal-article {
+    background: var(--gradient-box);
+}
+.sec__lib-article_head,
+.sec__deal-article_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.sec__lib-article_head img,
+.sec__deal-article_head img {
+    width: 60px;
+    height: 60px;
+}
+
+.sec__lib-article:nth-child(2) img {
+    width: 80px;
+    height: 16px;
+}
+
+.sec__lib-article:nth-child(9) img,
+.sec__lib-article:nth-child(12) img {
+    width: 120px;
+    height: 40px;
+}
+
+.sec__lib-article:nth-child(18) img,
+.sec__deal-article:nth-child(7) img {
+    width: 100px;
+    height: 50px;
+}
+
+.sec__lib-article_head h3,
+.sec__deal-article_head h3  {
+    font-family: var(--font-family);
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 700;
+    margin-left: 1rem;
+}
+
+.sec__lib-article_head p,
+.sec__deal-article_head p {
+    font-family: var(--font-family);
+    font-size: 0.8rem;
+    color: #fff;
+    margin-left: 1rem;
+}
+
+.sec__lib-article_body,
+.sec__deal-article_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    border-bottom: 1px solid  rgb(120, 120, 194) ;
+}
+
+.sec__lib-article_body h3,
+.sec__deal-article_body h3  {
+    font-family: var(--font-family);
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+    text-align: center;
+}
+
+.sec__lib-article_body p,
+.sec__deal-article_body p {
+    font-family: var(--font-family);
+    font-size: 0.8rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.sec__lib-article_footer,
+.sec__deal-article_footer {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    padding-bottom: 0rem;
+}
+
+.sec__lib-article_footer button:nth-child(1),
+.sec__deal-article_footer button:nth-child(1) {
+    background: rgb(255, 248, 234);
+    color: red ;
+    
+}
+
+.sec__lib-article_footer button:nth-child(2),
+.sec__deal-article_footer button:nth-child(2) {
+    background: rgb(194, 234, 250);
+    color: blue;
+    padding: 0.2rem 0.8rem;
+    padding-bottom: 0.5rem;
+}
+
+
+div.sec__lib-article_footer button.sec__lib-btn {
+    background: #fff;
+    color: #000;
+}
+
+.sec__lib-article_footer button:nth-child(2) img {
+    width:20px;
+    height:20px;
+    position: relative;
+    top: 5px;
+}
+
+
+
+.sec__lib-article:nth-child(24) {
+    justify-content: space-evenly;
+    background: var(--gradient-text);
+}
+.sec__lib-article:nth-child(24) p {
+    color: #000;
+    font-weight: 500;
+    position: relative;
+}
+
+.sec__lib-article:nth-child(24) .sec__lib-article_body {
+    align-items: flex-start;
+    border-bottom: 1px solid var(--color-text);
+    padding-bottom: 4.3rem;
+}
+.sec__lib-article:nth-child(24) h3 {
+    color: #000;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.sec__lib-article:nth-child(24) img {
+    width: 100px;
+    height: 40px;
+}
+
+
+.sec__lib-article:nth-child(24) button {
+    background: #fff;
+    color: #000;
+    padding: 0.6rem 2rem ;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.sec__lib-article:nth-child(24) button:hover{
+    color: #fff;
+    background: #000;
+}
+.sec__lib-article:nth-child(21),
+.sec__lib-article:nth-child(5) {
+    border: 2px solid skyblue;
+}
+
+@media screen and (max-width:1050px) {
+    .sec__lib-article_container,
+    .sec__deal-article_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width:800px) {
+    .sec__lib-article_container,
+    .sec__deal-article_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    .sec__lib-article_container,
+    .sec__deal-article_container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width:350px) {
+    .sec__lib-article_container,
+    .sec__deal-article_container {
+        padding:1rem;
+    }
+
+
+}

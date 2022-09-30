@@ -1,0 +1,36 @@
+.sec__label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 3rem ;
+    padding: 2rem;
+    font-family: var(--font-family);
+    background:  var(--color-blog);
+    border-radius: 5px;
+}
+
+.sec__label-content {
+    margin: 2rem 3rem;
+}
+
+.sec__label-content h3 {
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.sec__label-content p {
+    color: #fff;
+}
+
+.sec__label-btn {
+    font-size: 1rem;
+    padding: 0.7rem 1rem;
+    margin-bottom: 0;
+}
+
+
+@media screen and (max-width:800px) {
+    .sec__label {
+        flex-direction: column;
+    }
+}
